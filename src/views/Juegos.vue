@@ -1,33 +1,44 @@
 <template>
-  <div class="juegos ">
-    <br>
-    <div id="contImg1" class="overflow-hidden">
-      <img src="../assets/img/calendario4.jpg" alt="Calendario" id='imgCalendar' class="d-flex">
-    </div>
+  <div id="juegos">
+    <!-- <LoadScreen /> -->
+    <div id="contImg" class="bg-dark w-100">
+      <img src="../assets/img/calendario4-large.jpg" alt="Calendario" id='imgCalendar' class="d-flex rounded w-100">
+    </div>    
     <Header id="headTitle" titulo='Juegos de la temporada' class="bg-warning p-2" />
-    <ContainJuegos />
-    <br>
+    <ListaPartidos />
+    <!-- <ContainJuegos /> -->
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
-import ContainJuegos from '@/components/ContainJuegos'
+import ListaPartidos from '@/components/ListaPartidos'
+// import LoadScreen from '@/components/LoadScreen'
+// import ContainJuegos from '@/components/ContainJuegos'
 
 export default {
     name: 'Juegos',
     components: {
+      // LoadScreen,
       Header,
-      ContainJuegos,
+      ListaPartidos,
+      // ContainJuegos,
     }
 }
+
+// window.onload = function(){
+//   var contenedor = document.getElementById('contenedor-carga');
+//   contenedor.style.visibility = 'hidden';
+//   contenedor.style.opacity = '0';
+// }
 </script>
 
 <style scoped lang='sass'>
-#contImg1
-  width: 100%
-  max-height: 650px
+
 #imgCalendar
-  width: 100%
-  margin-top: -10%
+  // width: 800px
+  display: block
+  margin: 0 auto
+  // max-width: 100vw
+
 </style>
