@@ -2,7 +2,7 @@
   <div id="containDetail" class="container-fluid">
     <div id="lstDetalles" class="mb-3">
       <br>
-      <div class="container d-flex justify-content-between align-items-center">
+      <div class="container d-flex justify-content-between align-items-center" >
 
         <small class="badge bg-success p-3">{{$route.params.id}}</small>
 
@@ -12,8 +12,8 @@
 
       </div>
       <br>
-      <div class="d-sm-flex">
-        <div class="">
+      <div class="d-sm-flex row">
+        <div class="col fade show">
           <p class="p-2" style="color: rgb(180,180,180)"><small>{{$route.params.descripcion}}</small></p>
           <div class="alert alert-dark d-flex justify-content-between align-items-center mt-4 w-100">
             <p class="form-check-label d-block my-auto">{{$route.params.lugar}}</p>
@@ -30,10 +30,10 @@
           </div>
         </div>
 
-        <div id="contMapa" class="collapse fade mx-2 my-auto">
+        <div id="contMapa" class="collapse col-sm-5 fade mx-2 my-auto ">
           <p><strong>Referencia: </strong>{{$route.params.referencia}}</p>
 
-          <iframe :src="$route.params.mapa" class="w-100 h-100 m-auto d-block" frameborder="0" style="border:0; min-width:300px; max-height:450px;" allowfullscreen="" aria-hidden="" tabindex="0"></iframe>
+          <iframe :src="$route.params.mapa" class="w-100 h-100 m-auto d-block" frameborder="0" style="border:0; max-height:450px;" allowfullscreen="true" aria-hidden="" tabindex="0"></iframe>
         </div>
       </div>
 
