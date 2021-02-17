@@ -1,12 +1,13 @@
 import firebase from "firebase";
 const firebaseConfig = {
-  apiKey: "AIzaSyC3npGf7Jx-oyWzw-KDP9lgp9qnY8CzxQk",
-  authDomain: "app-nysl-303cb.firebaseapp.com",
-  projectId: "app-nysl-303cb",
-  storageBucket: "app-nysl-303cb.appspot.com",
-  messagingSenderId: "107770918772",
-  appId: "1:107770918772:web:8a827e5f1fc08484fa5e21"
-};
+    apiKey: "AIzaSyBTLAXCKj1RROljsCiOs1EhcFQdOK0MrxM",
+    authDomain: "screen-app-7642b.firebaseapp.com",
+    projectId: "screen-app-7642b",
+    storageBucket: "screen-app-7642b.appspot.com",
+    messagingSenderId: "374280523433",
+    appId: "1:374280523433:web:cff5ec96541f680d17a3b8"
+  };
+  // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 firebaseApp.firestore().settings({ timestampsInSnapshots: true });
 

@@ -11,29 +11,65 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title ms-auto" id="labelModal">Iniciar Sesión</h5>
-            <button
+            <h5 class="modal-title mx-auto" id="labelModal">Iniciar Sesión</h5>
+            <!-- <button
               type="button"
               class="btn-close"
               data-mdb-dismiss="modal"
               aria-label="Close"
-            ></button>
+            ></button> -->
           </div>
           <div class="modal-body">
-            <form @submit.prevent="login">
-                
-              <div class="form-outline">
-                <input class="form-control border" type="email" id="inpMail" />
-                <label class="form-label text-dark bg-light" for="#inpMail">Usuario</label>
-              </div>
-                <br>
-              <div class="form-outline">
-                <input class="form-control border" type="password" id="inpPass" />
-                <label class="form-label text-dark bg-light" for="#inpPass">Contraseña</label>
-              </div>
+            <form>
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="form1Example1" class="form-control border" />
+                    <label class="form-label text-muted" for="form1Example1">Correo electrónico</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="form1Example2" class="form-control border" />
+                    <label class="form-label text-muted" for="form1Example2">Contraseña</label>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                    <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                        <input
+                        class="form-check-input bg-warning border-warning"
+                        type="checkbox"
+                        value=""
+                        id="form1Example3"
+                        checked
+                        />
+                        <label class="form-check-label" for="form1Example3">Recordarme</label>
+                    </div>
+                    </div>
+
+                    <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!" class="text-warning" style="font-size: .8rem">recuperar contraseña</a>
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-success btn-block">Ingresar</button>
             </form>
           </div>
+
           <div class="modal-footer">
+            <button
+              type="button"
+              class="border-0 text-info"
+              data-mdb-dismiss="modal"
+              style="background-color: white;"
+            >
+              Registrarse
+            </button>
+            
             <button
               type="button"
               class="btn btn-danger"
@@ -41,11 +77,6 @@
             >
               Close
             </button>
-            <input 
-              type="submit" 
-              class="btn btn-success"
-              value="Ingresar" 
-            />
           </div>
         </div>
       </div>
@@ -89,12 +120,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-#login
-    position: absolute
-    // display: flex
-    // justify-content: center
-    // items-align: center
-    // width: 100%
-    // height: 100%
-    z-index: 2000
+.form-label
+    font-size: .75rem
+    background-color: white
 </style>
