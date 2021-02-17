@@ -1,60 +1,192 @@
 <template>
-  <div id="loadScreen">
-      <div id="contenedor-carga" class="w-100 h-100">
-        <div id="carga" class="rounded-circle">
-        </div>
+  <div
+    id="loadScreen"
+    v-if="start"
+    class="d-flex justify-content-center items-align-center"
+  >
+    <!-- <div id="contenedor-carga" class="w-100 h-100">
+      <div id="carga" class="rounded-circle"></div>
 
-        <!-- <img src="../assets/img/soccer1.jpg" alt="">
-        <img src="../assets/img/soccer1.jpg" alt="">
-        <img src="../assets/img/soccer1.jpg" alt="">
-        <img src="../assets/img/soccer1.jpg" alt=""> -->
+    </div> -->
+
+    <div class="loadingio-spinner-spinner-wz6rdxltd7">
+      <div class="ldio-g4jr91uon3v">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'LoadScreen',
-  methods: {
-    
-  },
-}
-
-
+  name: "LoadScreen",
+  props: ["start"]
+};
 </script>
 
-<style scoped lang="sass">
-*,*:after,*:before
-  margin: 0
-  padding: 0
-  box-sizing: border-box
+<style scoped>
+#loadScreen {
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
 
-#contenedor-carga
-  background-color: rgba(200,200,200,1)
-  max-height: 100vh
-  z-index: 900
-  transition: all 1s ease-in-out
-  position: fixed
-
-#carga
-  border: 10px solid #000
-  border-top-color: yellow
-  border-top-style: groove
-  height: 100px
-  width: 100px
-
-  position: absolute
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  margin: auto
-
-  animation: girar 2s linear infinite
-
-  @keyframes girar
-    0%
-      transform: rotate(0deg)
-    100%
-      transform: rotate(360deg)
+@keyframes ldio-g4jr91uon3v {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.ldio-g4jr91uon3v div {
+  left: 99px;
+  top: 57px;
+  position: absolute;
+  animation: ldio-g4jr91uon3v linear 1.25s infinite;
+  background: #2f2926;
+  width: 2px;
+  height: 6px;
+  border-radius: 1px / 3px;
+  transform-origin: 1px 43px;
+}
+.ldio-g4jr91uon3v div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1875s;
+  background: #2f2926;
+}
+.ldio-g4jr91uon3v div:nth-child(2) {
+  transform: rotate(18deg);
+  animation-delay: -1.125s;
+  background: #603417;
+}
+.ldio-g4jr91uon3v div:nth-child(3) {
+  transform: rotate(36deg);
+  animation-delay: -1.0625s;
+  background: #74411f;
+}
+.ldio-g4jr91uon3v div:nth-child(4) {
+  transform: rotate(54deg);
+  animation-delay: -1s;
+  background: #8e511c;
+}
+.ldio-g4jr91uon3v div:nth-child(5) {
+  transform: rotate(72deg);
+  animation-delay: -0.9375s;
+  background: #bc8540;
+}
+.ldio-g4jr91uon3v div:nth-child(6) {
+  transform: rotate(90deg);
+  animation-delay: -0.875s;
+  background: #d5912e;
+}
+.ldio-g4jr91uon3v div:nth-child(7) {
+  transform: rotate(108deg);
+  animation-delay: -0.8125s;
+  background: #e3ab45;
+}
+.ldio-g4jr91uon3v div:nth-child(8) {
+  transform: rotate(126deg);
+  animation-delay: -0.75s;
+  background: #2f2926;
+}
+.ldio-g4jr91uon3v div:nth-child(9) {
+  transform: rotate(144deg);
+  animation-delay: -0.6875s;
+  background: #603417;
+}
+.ldio-g4jr91uon3v div:nth-child(10) {
+  transform: rotate(162deg);
+  animation-delay: -0.625s;
+  background: #74411f;
+}
+.ldio-g4jr91uon3v div:nth-child(11) {
+  transform: rotate(180deg);
+  animation-delay: -0.5625s;
+  background: #8e511c;
+}
+.ldio-g4jr91uon3v div:nth-child(12) {
+  transform: rotate(198deg);
+  animation-delay: -0.5s;
+  background: #bc8540;
+}
+.ldio-g4jr91uon3v div:nth-child(13) {
+  transform: rotate(216deg);
+  animation-delay: -0.4375s;
+  background: #d5912e;
+}
+.ldio-g4jr91uon3v div:nth-child(14) {
+  transform: rotate(234deg);
+  animation-delay: -0.375s;
+  background: #e3ab45;
+}
+.ldio-g4jr91uon3v div:nth-child(15) {
+  transform: rotate(252deg);
+  animation-delay: -0.3125s;
+  background: #2f2926;
+}
+.ldio-g4jr91uon3v div:nth-child(16) {
+  transform: rotate(270deg);
+  animation-delay: -0.25s;
+  background: #603417;
+}
+.ldio-g4jr91uon3v div:nth-child(17) {
+  transform: rotate(288deg);
+  animation-delay: -0.1875s;
+  background: #74411f;
+}
+.ldio-g4jr91uon3v div:nth-child(18) {
+  transform: rotate(306deg);
+  animation-delay: -0.125s;
+  background: #8e511c;
+}
+.ldio-g4jr91uon3v div:nth-child(19) {
+  transform: rotate(324deg);
+  animation-delay: -0.0625s;
+  background: #bc8540;
+}
+.ldio-g4jr91uon3v div:nth-child(20) {
+  transform: rotate(342deg);
+  animation-delay: 0s;
+  background: #d5912e;
+}
+.loadingio-spinner-spinner-wz6rdxltd7 {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-g4jr91uon3v {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-g4jr91uon3v div {
+  box-sizing: content-box;
+}
+/* generated by https://loading.io/ */
 </style>

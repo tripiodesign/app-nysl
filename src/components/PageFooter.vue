@@ -1,16 +1,14 @@
 <template>
-  <div id="pageFooter" class="footer">
-    
-  </div>
+  <div id="pageFooter" class="footer"></div>
 </template>
 
 <script>
 export default {
-    name: 'PageFooter',
-}
+  name: "PageFooter"
+};
 </script>
 
-<style scoped lang='sass'>
+<style scoped lang="sass">
 li, p
     font-size: .8em
 h1, h2, h3, h4, h5, h6

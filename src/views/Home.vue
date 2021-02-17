@@ -1,39 +1,33 @@
 <template>
   <div id="home">
+    <Carrusel />
     <!-- <LoadScreen /> -->
-    <div id="contImg" class="bg-dark w-100">
-      <img src="../assets/img/soccer2-large.jpg" alt="Portada" id='imgPortada' class="d-flex rounded w-100">
-    </div>
-    <Header titulo='Bienvenidos a NYSL' class="bg-warning" />
+    <Header titulo="Bienvenidos a NYSL" class="bg-warning" />
     <ContainHome
-      title1='Programación' 
-      title2='Detalles' 
-      title3='Eventos' 
-      infoJuegos='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil quod sequi, consequatur suscipit dolores quaerat quia voluptates fugit corporis repellat odio voluptate quisquam eius'
+      title1="Programación"
+      title2="Detalles"
+      title3="Eventos"
+      infoJuegos="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, nihil quod sequi, consequatur suscipit dolores quaerat quia voluptates fugit corporis repellat odio voluptate quisquam eius"
       class=""
     />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
-import ContainHome from '@/components/ContainHome'
+import Header from "@/components/Header";
+import ContainHome from "@/components/ContainHome";
+import Carrusel from "@/components/Carrusel";
 // import LoadScreen from '@/components/LoadScreen'
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     // LoadScreen,
     Header,
-    ContainHome,
-  },
-}
-
-// window.onload = function(){
-//   var contenedor = document.getElementById('contenedor-carga');
-//   contenedor.style.visibility = 'hidden';
-//   contenedor.style.opacity = '0';
-// }
+    Carrusel,
+    ContainHome
+  }
+};
 </script>
 
 <style scoped lang="sass">
@@ -42,5 +36,4 @@ export default {
   display: block
   margin: 0 auto
   // max-width: 100vw
-  
 </style>
